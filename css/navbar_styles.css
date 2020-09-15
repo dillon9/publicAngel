@@ -1,0 +1,55 @@
+.nav {
+	background-image: url("longbar_middle.png");
+	border-radius: 5px;
+	width: 75% ;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:10px;
+}
+
+.nav ul {
+	list-style:none;
+	margin:0;
+	width:80%;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+.nav li {
+	float:left;
+	width:20%;
+	text-align:center;
+	position:relative;
+}
+
+.nav a {
+	text-decoration:none;
+	color:white;
+	font-size: 16px;
+	line-height: 30px;
+	padding-bottom: 10px;
+}
+
+.nav li ul {
+	padding-left:0px;
+	position:absolute;
+	top:30;
+	left:0;
+	right: 0;
+	width: 100%;
+	visibility: hidden;
+	text-align: center;
+}
+
+.nav li ul li {
+	float:none;
+    border-top:1px solid white;
+    background-color: #aaa;
+    width: 100%;
+}
+
+.nav li:hover ul {visibility:visible;}
+
+.nav li:hover {background-color:darkred;}
+
+.content {clear:both;}
