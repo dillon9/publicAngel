@@ -12,7 +12,7 @@ if(isset($_SESSION["id"])){
     $posterid = $q[0]["id"]; //i am aware of what i am doing
     $postid = $_GET["postid"];
 
-    if(getDomain($q[0]["email"]) === "@buckley.org" && $q[0]["verified"] === '1' && strlen(trim($body)) !== 0){
+    if(getDomain($q[0]["email"]) === "????" && $q[0]["verified"] === '1' && strlen(trim($body)) !== 0){
         $body = sanitize($body);
 
     	$nReply = $db->prepare("INSERT INTO replies (postid, posterid, body) VALUES (:postid, :posterid, :body)");
