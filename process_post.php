@@ -12,7 +12,7 @@ if(isset($_SESSION["id"])){
     $body = $_POST["body"];
     $classid = $_POST["cid"];
     $posterid = $q[0]["id"];
-    if(getDomain($q[0]["email"]) === "@buckley.org" && $q[0]["verified"] === '1' && strlen(trim($title)) !== 0 && strlen(trim($body)) !== 0){
+    if(getDomain($q[0]["email"]) === "????" && $q[0]["verified"] === '1' && strlen(trim($title)) !== 0 && strlen(trim($body)) !== 0){
         $body = sanitize($body);
         $title = sanitize($title);
 
