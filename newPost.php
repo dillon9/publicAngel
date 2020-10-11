@@ -8,7 +8,7 @@ if(isset($_SESSION["id"])){
     $q = $db->query("SELECT email, verified FROM users WHERE id=$userID");
     $q = $q->fetchAll();
 
-    if(getDomain($q[0]["email"]) === "@buckley.org" && $q[0]["verified"] == 1){
+    if(getDomain($q[0]["email"]) === "?????" && $q[0]["verified"] == 1){
     }
     else
         header("location:index.php");
